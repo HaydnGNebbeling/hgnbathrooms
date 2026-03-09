@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HGN Bathrooms | Bathroom Renovations & Plumbing | Surrey, Kent & Sussex</title>
-  <meta name="description" content="HGN Bathrooms by Haydn Nebbeling - Quality bathroom renovations, plumbing and tiling across Surrey, Kent and Sussex. Free quotes. Call 07584 624 621.">
-  <meta name="keywords" content="bathroom renovation Surrey, plumber Kent, bathroom fitter Sussex, bathroom renovation near me, tiling, Quooker installation, wet room, cloakroom renovation, HGN Bathrooms">
+  <title>HGN Bathrooms | Bathroom Renovations Surrey, Kent & Sussex | Haydn Nebbeling</title>
+  <meta name="description" content="Expert bathroom renovations by Haydn Nebbeling, based in Lingfield. Serving East Grinstead, Guildford, Sevenoaks, Crawley & 20+ towns across Surrey, Kent & Sussex. Free quotes — call 07584 624 621.">
+  <meta name="keywords" content="bathroom renovation Surrey, bathroom fitter Surrey, bathroom renovation Kent, bathroom fitter Sussex, bathroom renovation East Grinstead, bathroom renovation Guildford, bathroom renovation Sevenoaks, plumber Surrey, wet room Surrey, HGN Bathrooms, Haydn Nebbeling">
   <meta property="og:title" content="HGN Bathrooms | Bathroom Renovations & Plumbing">
   <meta property="og:description" content="Quality bathroom renovations and plumbing across Surrey, Kent & Sussex. Free quotes available.">
   <meta property="og:type" content="website">
@@ -33,9 +33,34 @@
       "name": "Haydn Nebbeling"
     },
     "areaServed": [
+      { "@type": "City", "name": "East Grinstead" },
+      { "@type": "City", "name": "Lingfield" },
+      { "@type": "City", "name": "Guildford" },
+      { "@type": "City", "name": "Woking" },
+      { "@type": "City", "name": "Epsom" },
+      { "@type": "City", "name": "Reigate" },
+      { "@type": "City", "name": "Dorking" },
+      { "@type": "City", "name": "Cranleigh" },
+      { "@type": "City", "name": "Caterham" },
+      { "@type": "City", "name": "Warlingham" },
+      { "@type": "City", "name": "Woldingham" },
+      { "@type": "City", "name": "Coulsdon" },
+      { "@type": "City", "name": "Sevenoaks" },
+      { "@type": "City", "name": "Tonbridge" },
+      { "@type": "City", "name": "Tunbridge Wells" },
+      { "@type": "City", "name": "Maidstone" },
+      { "@type": "City", "name": "Ashford" },
+      { "@type": "City", "name": "Edenbridge" },
+      { "@type": "City", "name": "Crawley" },
+      { "@type": "City", "name": "Horsham" },
+      { "@type": "City", "name": "Haywards Heath" },
+      { "@type": "City", "name": "Brighton" },
+      { "@type": "City", "name": "Forest Row" },
+      { "@type": "City", "name": "Copthorne" },
       { "@type": "AdministrativeArea", "name": "Surrey" },
       { "@type": "AdministrativeArea", "name": "Kent" },
-      { "@type": "AdministrativeArea", "name": "Sussex" }
+      { "@type": "AdministrativeArea", "name": "West Sussex" },
+      { "@type": "AdministrativeArea", "name": "East Sussex" }
     ],
     "serviceType": [
       "Bathroom Renovation",
@@ -307,15 +332,25 @@
     .transform-card .info p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; }
 
     /* ── AREAS ── */
-    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
     .area-card {
       background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
       padding: 32px; text-align: center; transition: all 0.3s;
     }
     .area-card:hover { border-color: var(--accent); transform: translateY(-4px); }
     .area-card .pin { font-size: 2rem; margin-bottom: 12px; }
-    .area-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+    .area-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 600; margin-bottom: 16px; }
     .area-card p { color: var(--text-muted); font-size: 0.85rem; }
+    .area-links { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+    .area-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 14px; border-radius: 8px; background: var(--bg);
+      border: 1px solid var(--border); font-size: 0.82rem; font-weight: 500;
+      color: var(--text-muted); transition: all 0.25s; text-decoration: none;
+    }
+    .area-link:hover { border-color: var(--accent); color: var(--text); background: var(--accent-glow); }
+    .area-link .arrow { font-size: 0.7rem; color: var(--accent); opacity: 0; transition: opacity 0.25s; }
+    .area-link:hover .arrow { opacity: 1; }
 
     /* ── REVIEWS PLACEHOLDER ── */
     .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
@@ -490,7 +525,7 @@
       </div>
       <div class="quote-options" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px;animation:fadeInUp 0.8s ease 1s both;">
         <a href="tel:07584624621" style="color:var(--text-muted);font-size:0.85rem;font-weight:500;transition:color 0.3s;">&#x1f4de; Call Us</a>
-        <a href="mailto:info@hgnbathrooms.com" style="color:var(--text-muted);font-size:0.85rem;font-weight:500;transition:color 0.3s;">&#x2709; Email</a>
+        <a href="/cdn-cgi/l/email-protection#c1a8afa7ae81a9a6afa3a0b5a9b3aeaeacb2efa2aeac" style="color:var(--text-muted);font-size:0.85rem;font-weight:500;transition:color 0.3s;">&#x2709; Email</a>
         <a href="https://wa.me/447584624621?text=Hi%2C%20I%27m%20interested%20in%20a%20quote." target="_blank" rel="noopener" style="color:var(--text-muted);font-size:0.85rem;font-weight:500;transition:color 0.3s;">&#x1f4ac; WhatsApp</a>
       </div>
     </div>
@@ -791,24 +826,54 @@
     <div class="section-header reveal">
       <div class="section-tag">Coverage</div>
       <h2>Areas We Serve</h2>
-      <p>Covering Surrey, Kent and Sussex — get in touch to check your area.</p>
+      <p>Based in Lingfield — covering Surrey, Kent, Sussex and the surrounding border towns. Click your area for a dedicated local page.</p>
     </div>
     <div class="areas-grid reveal">
+
       <div class="area-card">
         <div class="pin">&#x1f4cd;</div>
         <h3>Surrey</h3>
-        <p>Guildford, Woking, Epsom, Reigate, Dorking, Cranleigh & surrounding areas</p>
+        <div class="area-links">
+          <a class="area-link" href="bathroom-renovation-guildford.html">Guildford <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-woking.html">Woking <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-epsom.html">Epsom <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-reigate.html">Reigate <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-dorking.html">Dorking <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-cranleigh.html">Cranleigh <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-caterham.html">Caterham <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-warlingham.html">Warlingham <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-woldingham.html">Woldingham <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-coulsdon.html">Coulsdon <span class="arrow">&#x2192;</span></a>
+        </div>
       </div>
+
       <div class="area-card">
         <div class="pin">&#x1f4cd;</div>
         <h3>Kent</h3>
-        <p>Sevenoaks, Tonbridge, Tunbridge Wells, Maidstone, Ashford & surrounding areas</p>
+        <div class="area-links">
+          <a class="area-link" href="bathroom-renovation-sevenoaks.html">Sevenoaks <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-tonbridge.html">Tonbridge <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-tunbridge-wells.html">Tunbridge Wells <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-maidstone.html">Maidstone <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-ashford.html">Ashford <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-edenbridge.html">Edenbridge <span class="arrow">&#x2192;</span></a>
+        </div>
       </div>
+
       <div class="area-card">
         <div class="pin">&#x1f4cd;</div>
-        <h3>Sussex</h3>
-        <p>Crawley, Horsham, East Grinstead, Haywards Heath, Brighton & surrounding areas</p>
+        <h3>Sussex &amp; Border</h3>
+        <div class="area-links">
+          <a class="area-link" href="bathroom-renovation-east-grinstead.html">East Grinstead <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-crawley.html">Crawley <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-horsham.html">Horsham <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-haywards-heath.html">Haywards Heath <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-brighton.html">Brighton <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-forest-row.html">Forest Row <span class="arrow">&#x2192;</span></a>
+          <a class="area-link" href="bathroom-renovation-copthorne.html">Copthorne <span class="arrow">&#x2192;</span></a>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -827,7 +892,7 @@
         </div>
         <div class="contact-item">
           <div class="contact-icon">&#x2709;</div>
-          <div><h4>Email</h4><a href="mailto:info@hgnbathrooms.com">info@hgnbathrooms.com</a></div>
+          <div><h4>Email</h4><a href="/cdn-cgi/l/email-protection#e68f888089a68e81888487928e9489898b95c885898b"><span class="__cf_email__" data-cfemail="5930373f3619313e373b382d312b3636342a773a3634">[email&#160;protected]</span></a></div>
         </div>
         <div class="contact-item">
           <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div>
@@ -885,7 +950,7 @@
     <div class="footer-socials">
       <a href="https://instagram.com/hgnbathrooms" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
       <a href="tel:07584624621" aria-label="Phone">&#x1f4de;</a>
-      <a href="mailto:info@hgnbathrooms.com" aria-label="Email">&#x2709;</a>
+      <a href="/cdn-cgi/l/email-protection#7c15121a133c141b121e1d08140e1313110f521f1311" aria-label="Email">&#x2709;</a>
     </div>
   </footer>
 
@@ -908,7 +973,7 @@
     <img id="lightbox-img" src="" alt="">
   </div>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Nav scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
@@ -983,15 +1048,4 @@
         if (isNaN(num)) return;
         const suffix = target.replace(/[0-9]/g, '');
         let cur = 0; const step = Math.max(1, Math.floor(num / 40));
-        const iv = setInterval(() => {
-          cur += step; if (cur >= num) { cur = num; clearInterval(iv); }
-          el.textContent = cur + suffix;
-        }, 30);
-        statObs.unobserve(el);
-      });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('.stat-number').forEach(el => statObs.observe(el));
-  </script>
-
-</body>
-</html>
+        const 
