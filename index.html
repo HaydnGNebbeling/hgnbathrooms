@@ -338,15 +338,12 @@
     .transform-card .info p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; }
 
     /* ── AREAS ── */
-    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
-    .area-card {
-      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 32px; text-align: center; transition: all 0.3s;
+    .town-pill {
+      display: inline-block; padding: 12px 24px; background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 50px; font-size: 0.9rem; font-weight: 600; font-family: 'Space Grotesk', sans-serif;
+      transition: all 0.3s; color: var(--text); text-decoration: none;
     }
-    .area-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-    .area-card .pin { font-size: 2rem; margin-bottom: 12px; }
-    .area-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
-    .area-card p { color: var(--text-muted); font-size: 0.85rem; }
+    .town-pill:hover { border-color: var(--accent); background: var(--accent-glow); transform: translateY(-3px); color: var(--accent); }
 
     /* ── REVIEWS PLACEHOLDER ── */
     .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
@@ -471,7 +468,7 @@
       section { padding: 60px 20px; }
       .hero { padding: 100px 20px 60px; }
       .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 32px; }
-      .areas-grid { grid-template-columns: 1fr; }
+      .town-pill { padding: 10px 18px; font-size: 0.82rem; }
       .contact-grid { grid-template-columns: 1fr; }
       .portfolio-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
       .transform-grid { grid-template-columns: 1fr; }
@@ -554,7 +551,7 @@
       <div class="stat"><div class="stat-number">30+</div><div class="stat-label">Bathrooms Delivered</div></div>
       <div class="stat"><div class="stat-number">3</div><div class="stat-label">Years in the Trade</div></div>
       <div class="stat"><div class="stat-number">5&#9733;</div><div class="stat-label">Rated on MyBuilder</div></div>
-      <div class="stat"><div class="stat-number">3</div><div class="stat-label">Areas We Cover</div></div>
+      <div class="stat"><div class="stat-number">23+</div><div class="stat-label">Towns Covered</div></div>
     </div>
   </section>
 
@@ -822,23 +819,40 @@
     <div class="section-header reveal">
       <div class="section-tag">Coverage</div>
       <h2>Areas We Serve</h2>
-      <p>Covering Surrey, Kent and Sussex — get in touch to check your area.</p>
+      <p>Click your town to see our local bathroom renovation page.</p>
     </div>
-    <div class="areas-grid reveal">
-      <div class="area-card">
-        <div class="pin">&#x1f4cd;</div>
-        <h3>Surrey</h3>
-        <p><a href="bathroom-renovation-guildford.html">Guildford</a>, <a href="bathroom-renovation-woking.html">Woking</a>, <a href="bathroom-renovation-epsom.html">Epsom</a>, <a href="bathroom-renovation-reigate.html">Reigate</a>, <a href="bathroom-renovation-dorking.html">Dorking</a>, <a href="bathroom-renovation-cranleigh.html">Cranleigh</a>, <a href="bathroom-renovation-caterham.html">Caterham</a>, <a href="bathroom-renovation-warlingham.html">Warlingham</a>, <a href="bathroom-renovation-woldingham.html">Woldingham</a>, <a href="bathroom-renovation-coulsdon.html">Coulsdon</a></p>
+    <div style="max-width:1000px;margin:0 auto;" class="reveal">
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:var(--accent);margin-bottom:16px;text-align:center;">Surrey</h3>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:40px;">
+        <a href="bathroom-renovation-guildford.html" class="town-pill">Guildford</a>
+        <a href="bathroom-renovation-woking.html" class="town-pill">Woking</a>
+        <a href="bathroom-renovation-epsom.html" class="town-pill">Epsom</a>
+        <a href="bathroom-renovation-reigate.html" class="town-pill">Reigate</a>
+        <a href="bathroom-renovation-dorking.html" class="town-pill">Dorking</a>
+        <a href="bathroom-renovation-cranleigh.html" class="town-pill">Cranleigh</a>
+        <a href="bathroom-renovation-caterham.html" class="town-pill">Caterham</a>
+        <a href="bathroom-renovation-warlingham.html" class="town-pill">Warlingham</a>
+        <a href="bathroom-renovation-woldingham.html" class="town-pill">Woldingham</a>
+        <a href="bathroom-renovation-coulsdon.html" class="town-pill">Coulsdon</a>
       </div>
-      <div class="area-card">
-        <div class="pin">&#x1f4cd;</div>
-        <h3>Kent</h3>
-        <p><a href="bathroom-renovation-sevenoaks.html">Sevenoaks</a>, <a href="bathroom-renovation-tonbridge.html">Tonbridge</a>, <a href="bathroom-renovation-tunbridge-wells.html">Tunbridge Wells</a>, <a href="bathroom-renovation-maidstone.html">Maidstone</a>, <a href="bathroom-renovation-ashford.html">Ashford</a>, <a href="bathroom-renovation-edenbridge.html">Edenbridge</a></p>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:var(--accent);margin-bottom:16px;text-align:center;">Kent</h3>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:40px;">
+        <a href="bathroom-renovation-sevenoaks.html" class="town-pill">Sevenoaks</a>
+        <a href="bathroom-renovation-tonbridge.html" class="town-pill">Tonbridge</a>
+        <a href="bathroom-renovation-tunbridge-wells.html" class="town-pill">Tunbridge Wells</a>
+        <a href="bathroom-renovation-maidstone.html" class="town-pill">Maidstone</a>
+        <a href="bathroom-renovation-ashford.html" class="town-pill">Ashford</a>
+        <a href="bathroom-renovation-edenbridge.html" class="town-pill">Edenbridge</a>
       </div>
-      <div class="area-card">
-        <div class="pin">&#x1f4cd;</div>
-        <h3>Sussex</h3>
-        <p><a href="bathroom-renovation-east-grinstead.html">East Grinstead</a>, <a href="bathroom-renovation-crawley.html">Crawley</a>, <a href="bathroom-renovation-horsham.html">Horsham</a>, <a href="bathroom-renovation-haywards-heath.html">Haywards Heath</a>, <a href="bathroom-renovation-brighton.html">Brighton</a>, <a href="bathroom-renovation-forest-row.html">Forest Row</a>, <a href="bathroom-renovation-copthorne.html">Copthorne</a></p>
+      <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;color:var(--accent);margin-bottom:16px;text-align:center;">Sussex</h3>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
+        <a href="bathroom-renovation-east-grinstead.html" class="town-pill">East Grinstead</a>
+        <a href="bathroom-renovation-crawley.html" class="town-pill">Crawley</a>
+        <a href="bathroom-renovation-horsham.html" class="town-pill">Horsham</a>
+        <a href="bathroom-renovation-haywards-heath.html" class="town-pill">Haywards Heath</a>
+        <a href="bathroom-renovation-brighton.html" class="town-pill">Brighton</a>
+        <a href="bathroom-renovation-forest-row.html" class="town-pill">Forest Row</a>
+        <a href="bathroom-renovation-copthorne.html" class="town-pill">Copthorne</a>
       </div>
     </div>
   </section>
