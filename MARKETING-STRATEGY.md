@@ -1,7 +1,7 @@
 # HGN Bathrooms — Local Marketing Strategy 2026
 
 ## Business Overview
-- **Owner**: Haydn Nebbeling
+- **Owner**: Haydn
 - **Base**: Lingfield, Surrey
 - **Coverage**: Surrey, Kent & Sussex (23 towns)
 - **Services**: Full bathroom renovations, wet rooms, plumbing, tiling, cloakrooms, utility rooms

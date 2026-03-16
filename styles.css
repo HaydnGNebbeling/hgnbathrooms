@@ -12,12 +12,12 @@
   --text: #2d2a27;
   --text-muted: #6b6560;
   --text-light: #9a9490;
-  --accent: #1e6b5a;
-  --accent-hover: #247d6a;
-  --accent-light: #e8f4f0;
-  --accent-glow: rgba(30, 107, 90, 0.08);
-  --warm: #c8956c;
-  --warm-light: #f9f0e8;
+  --accent: #1a3a5c;
+  --accent-hover: #2c5aa0;
+  --accent-light: #e8eef6;
+  --accent-glow: rgba(26, 58, 92, 0.08);
+  --warm: #5b9bd5;
+  --warm-light: #eef4fb;
   --border: #e8e3de;
   --border-hover: #d4cec7;
   --shadow-sm: 0 2px 8px rgba(45, 42, 39, 0.06);
@@ -70,7 +70,7 @@ nav.scrolled {
   background: var(--accent); color: #fff; padding: 10px 24px; border-radius: 50px;
   font-weight: 600; font-size: 0.85rem; transition: all 0.3s;
 }
-.nav-cta:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(30, 107, 90, 0.25); }
+.nav-cta:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26, 58, 92, 0.25); }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 101; }
 .hamburger span { width: 24px; height: 2px; background: var(--text); transition: all 0.3s; }
 
@@ -102,7 +102,7 @@ nav.scrolled {
   color: #fff;
 }
 .hero h1 .highlight {
-  background: linear-gradient(135deg, #7cc4b4, var(--warm));
+  background: linear-gradient(135deg, #5b9bd5, var(--accent));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
 .hero p {
@@ -120,7 +120,7 @@ nav.scrolled {
 }
 .btn-primary:hover {
   background: var(--accent-hover); transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(30, 107, 90, 0.3);
+  box-shadow: 0 12px 40px rgba(26, 58, 92, 0.3);
 }
 .btn-outline {
   border: 1px solid rgba(255,255,255,0.3); color: #fff; padding: 14px 36px; border-radius: 50px;
