@@ -9,7 +9,7 @@
   <meta property="og:title" content="How Much Does a Bathroom Renovation Cost in 2026? | HGN Bathrooms">
   <meta property="og:description" content="Full UK bathroom renovation cost breakdown for 2026. Budget, mid-range, and premium price guides from a professional bathroom fitter.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="../images/luxury-bathroom.jpg">
+  <meta property="og:image" content="https://hgnbathrooms.co.uk/images/luxury-bathroom.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://hgnbathrooms.co.uk/blog/bathroom-renovation-cost-uk.html">
@@ -69,318 +69,7 @@
     ]
   }
   </script>
-
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --bg: #0a0a0a;
-      --bg-card: #111;
-      --bg-card-hover: #181818;
-      --text: #f5f5f5;
-      --text-muted: #888;
-      --accent: #2c5aa0;
-      --accent-hover: #3d6db5;
-      --accent-glow: rgba(44, 90, 160, 0.15);
-      --border: #1e1e1e;
-      --radius: 16px;
-      --radius-sm: 10px;
-    }
-
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    ::selection { background: var(--accent); color: var(--bg); }
-    a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-
-    /* -- NAV -- */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: 20px 40px;
-      display: flex; align-items: center; justify-content: space-between;
-      transition: all 0.4s ease;
-    }
-    nav.scrolled {
-      background: rgba(10,10,10,0.92);
-      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 14px 40px;
-    }
-    .nav-logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; }
-    .nav-logo span { color: var(--accent); }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a {
-      font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px;
-      color: var(--text-muted); transition: color 0.3s; position: relative;
-    }
-    .nav-links a::after {
-      content: ''; position: absolute; bottom: -4px; left: 0;
-      width: 0; height: 2px; background: var(--accent); transition: width 0.3s;
-    }
-    .nav-links a:hover { color: var(--text); }
-    .nav-links a:hover::after { width: 100%; }
-    .nav-links a.active { color: var(--text); }
-    .nav-links a.active::after { width: 100%; }
-    .nav-cta {
-      background: var(--accent); color: var(--bg); padding: 10px 24px; border-radius: 50px;
-      font-weight: 600; font-size: 0.85rem; transition: all 0.3s;
-    }
-    .nav-cta:hover { background: var(--accent-hover); transform: translateY(-2px); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 101; }
-    .hamburger span { width: 24px; height: 2px; background: var(--text); transition: all 0.3s; }
-
-    /* -- ARTICLE HERO -- */
-    .article-hero {
-      min-height: 45vh; display: flex; align-items: center; justify-content: center;
-      position: relative; overflow: hidden; padding: 140px 40px 70px;
-    }
-    .article-hero-bg {
-      position: absolute; inset: 0;
-      background: url('../images/luxury-bathroom.jpg') center/cover no-repeat;
-      filter: brightness(0.15); transform: scale(1.05);
-    }
-    .article-hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.92) 100%);
-    }
-    .article-hero-content { position: relative; z-index: 2; text-align: center; max-width: 800px; }
-    .article-meta {
-      display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;
-      margin-bottom: 24px; animation: fadeInUp 0.8s ease 0.2s both;
-    }
-    .article-meta span {
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent);
-    }
-    .article-meta .divider { width: 4px; height: 4px; border-radius: 50%; background: var(--text-muted); }
-    .article-hero h1 {
-      font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 800; line-height: 1.12; margin-bottom: 20px; animation: fadeInUp 0.8s ease 0.4s both;
-    }
-    .article-hero h1 .highlight {
-      background: linear-gradient(135deg, var(--accent), #e8d5a8);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-    .article-hero p {
-      font-size: 1.05rem; color: var(--text-muted); max-width: 600px;
-      margin: 0 auto; animation: fadeInUp 0.8s ease 0.6s both;
-    }
-
-    /* -- BREADCRUMB -- */
-    .breadcrumb {
-      padding: 16px 40px; border-bottom: 1px solid var(--border);
-      font-size: 0.8rem; color: var(--text-muted);
-    }
-    .breadcrumb a { color: var(--accent); transition: color 0.3s; }
-    .breadcrumb a:hover { color: var(--accent-hover); }
-
-    /* -- ARTICLE CONTENT -- */
-    .article-wrapper { max-width: 780px; margin: 0 auto; padding: 64px 40px; }
-    .article-wrapper h2 {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 700;
-      margin: 48px 0 20px; line-height: 1.25;
-    }
-    .article-wrapper h3 {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 600;
-      margin: 36px 0 14px; line-height: 1.3;
-    }
-    .article-wrapper p {
-      color: var(--text-muted); font-size: 1rem; line-height: 1.85; margin-bottom: 18px;
-    }
-    .article-wrapper ul, .article-wrapper ol {
-      color: var(--text-muted); font-size: 1rem; line-height: 1.85;
-      margin-bottom: 18px; padding-left: 24px;
-    }
-    .article-wrapper li { margin-bottom: 8px; }
-    .article-wrapper strong { color: var(--text); font-weight: 600; }
-    .article-wrapper a.inline-link {
-      color: var(--accent); font-weight: 500; border-bottom: 1px solid rgba(44,90,160,0.3);
-      transition: all 0.3s;
-    }
-    .article-wrapper a.inline-link:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
-
-    /* -- COST TABLE -- */
-    .cost-table-wrapper {
-      overflow-x: auto; margin: 32px 0; border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-    }
-    .cost-table {
-      width: 100%; border-collapse: collapse; font-size: 0.92rem;
-    }
-    .cost-table thead { background: var(--accent-glow); }
-    .cost-table th {
-      padding: 16px 20px; text-align: left; font-weight: 700; font-size: 0.82rem;
-      text-transform: uppercase; letter-spacing: 1px; color: var(--accent);
-      border-bottom: 1px solid var(--border);
-    }
-    .cost-table td {
-      padding: 14px 20px; border-bottom: 1px solid var(--border); color: var(--text-muted);
-    }
-    .cost-table tr:last-child td { border-bottom: none; }
-    .cost-table tr:hover td { background: rgba(44,90,160,0.05); }
-    .cost-table .price { color: var(--text); font-weight: 600; }
-
-    /* -- TIP BOX -- */
-    .tip-box {
-      background: var(--accent-glow); border: 1px solid rgba(44,90,160,0.3); border-radius: var(--radius-sm);
-      padding: 24px 28px; margin: 32px 0;
-    }
-    .tip-box h4 {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 700;
-      color: var(--accent); margin-bottom: 10px;
-    }
-    .tip-box p, .tip-box ul { color: var(--text-muted); font-size: 0.92rem; line-height: 1.8; }
-    .tip-box ul { padding-left: 20px; }
-    .tip-box li { margin-bottom: 6px; }
-
-    /* -- CTA BOX -- */
-    .cta-box {
-      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 40px; text-align: center; margin: 48px 0;
-    }
-    .cta-box h3 {
-      font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 14px;
-    }
-    .cta-box p { color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem; }
-    .cta-box .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary {
-      background: var(--accent); color: var(--bg); padding: 14px 36px; border-radius: 50px;
-      font-weight: 700; font-size: 0.95rem; transition: all 0.3s; border: none; cursor: pointer;
-      font-family: 'Inter', sans-serif; display: inline-block;
-    }
-    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(44,90,160,0.3); }
-    .btn-outline {
-      border: 1px solid var(--border); color: var(--text); padding: 14px 36px; border-radius: 50px;
-      font-weight: 600; font-size: 0.95rem; transition: all 0.3s; background: transparent; cursor: pointer;
-      font-family: 'Inter', sans-serif; display: inline-block;
-    }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
-
-    /* -- RELATED ARTICLES -- */
-    .related-section { padding: 80px 40px; background: var(--bg-card); }
-    .related-section .section-header { text-align: center; margin-bottom: 40px; }
-    .section-tag {
-      display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 3px;
-      text-transform: uppercase; color: var(--accent); margin-bottom: 16px;
-    }
-    .related-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 16px; }
-    .related-grid { max-width: 600px; margin: 0 auto; }
-    .related-card {
-      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 28px 28px; transition: all 0.4s; display: block;
-    }
-    .related-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-    .related-card-date { font-size: 0.72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
-    .related-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
-    .related-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.7; margin-bottom: 14px; }
-    .read-more {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 0.85rem; font-weight: 600; color: var(--accent); transition: all 0.3s;
-    }
-    .read-more:hover { color: var(--accent-hover); gap: 12px; }
-
-    /* -- CONTACT -- */
-    #contact { background: var(--bg-card); }
-    .section-header { text-align: center; margin-bottom: 64px; }
-    .section-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 16px; }
-    .section-header p { color: var(--text-muted); max-width: 500px; margin: 0 auto; font-size: 1rem; }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 1000px; margin: 0 auto; }
-    .contact-info { display: flex; flex-direction: column; gap: 28px; }
-    .contact-item { display: flex; align-items: flex-start; gap: 16px; }
-    .contact-icon { width: 48px; height: 48px; min-width: 48px; background: var(--accent-glow); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
-    .contact-item h4 { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 4px; }
-    .contact-item p, .contact-item a { font-size: 1.05rem; font-weight: 500; color: var(--text); transition: color 0.3s; }
-    .contact-item a:hover { color: var(--accent); }
-    .contact-form { display: flex; flex-direction: column; gap: 14px; }
-    .contact-form input, .contact-form textarea, .contact-form select {
-      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm);
-      padding: 14px 18px; color: var(--text); font-family: 'Inter', sans-serif;
-      font-size: 0.95rem; transition: border-color 0.3s; outline: none;
-    }
-    .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--accent); }
-    .contact-form textarea { min-height: 120px; resize: vertical; }
-    .contact-form select option { background: var(--bg); }
-
-    /* -- FOOTER -- */
-    footer {
-      padding: 40px; border-top: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
-    }
-    .footer-left { font-size: 0.85rem; color: var(--text-muted); }
-    .footer-socials { display: flex; gap: 12px; }
-    .footer-socials a {
-      width: 40px; height: 40px; background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 10px; display: flex; align-items: center; justify-content: center;
-      transition: all 0.3s; font-size: 1.1rem;
-    }
-    .footer-socials a:hover { border-color: var(--accent); background: var(--accent-glow); transform: translateY(-3px); }
-
-    /* -- WHATSAPP FLOAT -- */
-    .whatsapp-float {
-      position: fixed; bottom: 24px; right: 24px; z-index: 150;
-      width: 60px; height: 60px; background: #25D366; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.3s; cursor: pointer;
-    }
-    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
-    .whatsapp-float svg { fill: #fff; width: 32px; height: 32px; }
-    .whatsapp-float::after {
-      content: ''; position: absolute; inset: -4px; border-radius: 50%;
-      border: 2px solid #25D366; animation: wa-pulse 2s infinite;
-    }
-    @keyframes wa-pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.4); opacity: 0; } }
-
-    /* -- MOBILE CTA BAR -- */
-    .mobile-cta-bar {
-      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 140;
-      background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border-top: 1px solid var(--border); padding: 10px 16px;
-    }
-    .mobile-cta-bar .cta-buttons { display: flex; gap: 10px; }
-    .mobile-cta-bar .cta-btn {
-      flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
-      padding: 14px; border-radius: 12px; font-weight: 700; font-size: 0.9rem;
-      font-family: 'Inter', sans-serif; border: none; cursor: pointer; text-decoration: none;
-    }
-    .cta-btn-call { background: var(--accent); color: var(--bg); }
-    .cta-btn-wa { background: #25D366; color: #fff; }
-
-    /* -- ANIMATIONS -- */
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* -- MOBILE -- */
-    @media (max-width: 768px) {
-      nav { padding: 16px 20px; }
-      nav.scrolled { padding: 12px 20px; }
-      .nav-links, .nav-cta { display: none; }
-      .hamburger { display: flex; }
-      .article-wrapper { padding: 40px 20px; }
-      .article-hero { padding: 120px 20px 60px; }
-      .breadcrumb { padding: 12px 20px; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .related-section { padding: 60px 20px; }
-      section { padding: 60px 20px; }
-      footer { flex-direction: column; text-align: center; padding-bottom: 80px; }
-      .mobile-cta-bar { display: block; }
-      .whatsapp-float { bottom: 80px; }
-      .cost-table { font-size: 0.82rem; }
-      .cost-table th, .cost-table td { padding: 10px 12px; }
-      .nav-links.open {
-        display: flex; flex-direction: column; position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: var(--bg); align-items: center; justify-content: center;
-        gap: 40px; z-index: 100;
-      }
-      .nav-links.open a { font-size: 1.2rem; color: var(--text); }
-    }
-  </style>
+  <link rel="stylesheet" href="../styles.css">
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -389,6 +78,7 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
+  <link rel="preload" as="image" href="images/luxury-bathroom.jpg" fetchpriority="high">
 </head>
 <body>
 
@@ -401,6 +91,7 @@
       <li><a href="../index.html#reviews">Reviews</a></li>
       <li><a href="../blog.html" class="active">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="../about.html">About</a></li>
     </ul>
     <a href="tel:07584624621" class="nav-cta">07584 624 621</a>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -604,6 +295,7 @@
       <li><strong>Standard family bathroom:</strong> 5&ndash;8 working days</li>
       <li><strong>Large bathroom or wet room:</strong> 8&ndash;12 working days</li>
       <li><strong>Multiple rooms:</strong> 2&ndash;4 weeks depending on scope</li>
+      <li><a href="../about.html">About</a></li>
     </ul>
 
     <p>We always agree a clear timeline before starting, so you know exactly when your bathroom will be back in action.</p>
@@ -694,7 +386,7 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-left">&copy; 2026 HGN Bathrooms &bull; Haydn Nebbeling &bull; All rights reserved.</div>
+    <div class="footer-left">&copy; 2026 HGN Bathrooms &bull; Haydn Nebbeling &bull; All rights reserved. &bull; <a href="../privacy-policy.html" style="color:var(--text-muted);text-decoration:underline;">Privacy Policy</a></div>
     <div class="footer-socials">
       <a href="https://instagram.com/hgnbathrooms" target="_blank" rel="noopener" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
