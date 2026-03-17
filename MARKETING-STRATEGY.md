@@ -5,7 +5,7 @@
 - **Base**: Lingfield, Surrey
 - **Coverage**: Surrey, Kent & Sussex (23 towns)
 - **Services**: Full bathroom renovations, wet rooms, plumbing, tiling, cloakrooms, utility rooms
-- **Phone**: 07584 624 621
+- **Phone**: 01293 804 790
 - **Website**: hgnbathrooms.co.uk
 
 ---

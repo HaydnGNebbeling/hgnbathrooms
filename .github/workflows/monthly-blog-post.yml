@@ -73,7 +73,7 @@ jobs:
           - Write in a warm, professional, helpful tone — not corporate
           - 800-1000 words of body content
           - Include: intro, 3-4 H2 sections, a practical tips section, a CTA at the end
-          - CTA should mention free quotes and phone number 07584 624 621
+          - CTA should mention free quotes and phone number 01293 804 790
           - Mention Surrey, Kent or Sussex context where natural
           - No fluff, no generic filler — genuinely useful advice
 
@@ -148,7 +148,7 @@ jobs:
 
             <!-- Footer -->
             <footer style="background: var(--bg-hero); color: rgba(255,255,255,0.7); padding: 40px; text-align: center; font-size: 0.85rem;">
-              <p>© ${year} HGN Bathrooms · Lingfield, Surrey · <a href="tel:07584624621" style="color: var(--warm);">07584 624 621</a></p>
+              <p>© ${year} HGN Bathrooms · Lingfield, Surrey · <a href="tel:01293804790" style="color: var(--warm);">01293 804 790</a></p>
               <p style="margin-top: 8px;"><a href="../privacy-policy.html" style="color: rgba(255,255,255,0.5);">Privacy Policy</a></p>
             </footer>
 
