@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet Haydn | HGN Bathrooms — Bathroom Renovations Surrey, Kent &amp; Sussex</title>
-  <meta name="description" content="Meet Haydn, founder of HGN Bathrooms. Professional bathroom renovations across Surrey, Kent & Sussex. Learn about our approach, values, and why clients trust us.">
-  <meta property="og:title" content="About Haydn | HGN Bathrooms">
-  <meta property="og:description" content="Meet the person behind HGN Bathrooms. Quality bathroom renovations in Surrey, Kent & Sussex.">
+  <title>About HGN Bathrooms | Meet the Team — Surrey, Kent &amp; Sussex</title>
+  <meta name="description" content="Meet Haydn and Hope at HGN Bathrooms — a local, family-run bathroom renovation service based in Lingfield, Surrey. Find out how we work and why homeowners trust us.">
+  <meta property="og:title" content="About HGN Bathrooms | Meet the Team">
+  <meta property="og:description" content="A local, family-run bathroom renovation service in Lingfield, Surrey. Meet Haydn and Hope and find out how we work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hgnbathrooms.co.uk/about.html">
   <meta property="og:image" content="https://hgnbathrooms.co.uk/images/luxury-bathroom.jpg">
@@ -17,27 +17,145 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About HGN Bathrooms",
-    "description": "Meet Haydn, founder of HGN Bathrooms — professional bathroom renovations across Surrey, Kent & Sussex.",
-    "url": "https://hgnbathrooms.co.uk/about.html",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Haydn",
-      "jobTitle": "Founder & Lead Installer",
-      "worksFor": {
-        "@type": "HomeAndConstructionBusiness",
-        "name": "HGN Bathrooms",
-        "url": "https://hgnbathrooms.co.uk"
-      }
-    }
+    "description": "Meet the team behind HGN Bathrooms — local bathroom renovation specialists in Lingfield, Surrey.",
+    "url": "https://hgnbathrooms.co.uk/about.html"
   }
   </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWXRPFK6GN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BWXRPFK6GN');
+  </script>
   <link rel="preload" as="image" href="images/luxury-bathroom.jpg" fetchpriority="high">
+
+  <style>
+    /* ── ABOUT PAGE SPECIFIC ── */
+    .about-hero {
+      min-height: 55vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      background: var(--bg-hero);
+      position: relative; overflow: hidden;
+      padding: 120px 24px 80px;
+    }
+    .about-hero-content { position: relative; z-index: 2; max-width: 640px; }
+    .about-hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem); color: #fff; font-weight: 700; line-height: 1.15; margin-bottom: 16px; }
+    .about-hero p { color: rgba(255,255,255,0.75); font-size: 1.1rem; line-height: 1.7; }
+
+    /* ── SECTION NAV ── */
+    .section-nav {
+      display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+      padding: 28px 24px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 68px; z-index: 50;
+    }
+    .section-nav a {
+      font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+      color: var(--text-muted); padding: 8px 18px; border-radius: 50px;
+      border: 1px solid var(--border); transition: all 0.2s;
+    }
+    .section-nav a:hover, .section-nav a.active {
+      background: var(--accent); color: #fff; border-color: var(--accent);
+    }
+
+    /* ── TEAM SECTION ── */
+    .team-section { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
+    .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+    @media (max-width: 700px) { .team-grid { grid-template-columns: 1fr; } .team-section { padding: 60px 24px; } }
+
+    .team-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 40px 36px;
+      box-shadow: var(--shadow-sm); transition: box-shadow 0.3s;
+    }
+    .team-card:hover { box-shadow: var(--shadow-md); }
+    .team-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: var(--accent-light); display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; margin-bottom: 20px;
+      border: 3px solid var(--accent);
+    }
+    .team-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+    .team-role { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 20px; }
+    .team-card p { color: var(--text-muted); line-height: 1.75; font-size: 0.97rem; margin-bottom: 14px; }
+    .team-card p:last-of-type { margin-bottom: 0; }
+    .team-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .team-tag {
+      font-size: 0.78rem; font-weight: 500; padding: 5px 12px;
+      background: var(--accent-light); color: var(--accent);
+      border-radius: 50px;
+    }
+
+    /* ── PROCESS SECTION ── */
+    .process-section {
+      padding: 80px 40px;
+      background: var(--bg-hero);
+    }
+    @media (max-width: 700px) { .process-section { padding: 60px 24px; } }
+    .process-inner { max-width: 900px; margin: 0 auto; }
+    .process-section .section-tag { color: var(--warm); border-color: rgba(91,155,213,0.3); }
+    .process-section h2 { color: #fff; }
+    .process-section .section-sub { color: rgba(255,255,255,0.6); text-align: center; margin-top: 8px; margin-bottom: 56px; font-size: 1rem; }
+
+    .process-steps { display: flex; flex-direction: column; gap: 0; }
+    .process-step {
+      display: grid; grid-template-columns: 56px 1fr;
+      gap: 24px; padding: 0 0 48px;
+      position: relative;
+    }
+    .process-step:last-child { padding-bottom: 0; }
+    .step-left { display: flex; flex-direction: column; align-items: center; }
+    .step-number {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700;
+      flex-shrink: 0; position: relative; z-index: 1;
+    }
+    .step-line {
+      width: 2px; flex: 1; background: rgba(255,255,255,0.1);
+      margin-top: 8px; min-height: 32px;
+    }
+    .process-step:last-child .step-line { display: none; }
+    .step-content { padding-top: 12px; }
+    .step-content h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .step-content p { color: rgba(255,255,255,0.65); line-height: 1.7; font-size: 0.95rem; }
+
+    /* ── WHY US SECTION ── */
+    .why-section { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
+    @media (max-width: 700px) { .why-section { padding: 60px 24px; } }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } }
+
+    .why-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 32px 28px;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .why-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .why-icon { font-size: 2rem; margin-bottom: 16px; }
+    .why-card h4 { font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
+    .why-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.65; }
+
+    /* ── CTA BAND ── */
+    .about-cta {
+      background: var(--accent-light); padding: 72px 40px;
+      text-align: center; border-top: 1px solid var(--border);
+    }
+    .about-cta h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin-bottom: 12px; }
+    .about-cta p { color: var(--text-muted); font-size: 1rem; margin-bottom: 32px; }
+    .about-cta .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  </style>
 </head>
 <body>
 
@@ -48,6 +166,7 @@
       <li><a href="index.html#portfolio">Portfolio</a></li>
       <li><a href="index.html#reviews">Reviews</a></li>
       <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
     <a href="tel:07584624621" class="nav-cta">07584 624 621</a>
@@ -57,86 +176,192 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero" style="min-height:60vh;">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">About Us</div>
-      <h1>Meet <span class="highlight">Haydn</span></h1>
-      <p>The person behind every HGN Bathrooms project — from the first site visit to the final finishing touch.</p>
-    </div>
-  </section>
-
-  <!-- Trust Bar -->
-  <div class="trust-bar">
-    <div class="trust-item">
-      <div class="icon">&#x2714;</div>
-      <span>3 Years in the Trade</span>
-    </div>
-    <div class="trust-item">
-      <div class="icon">&#x2B50;</div>
-      <span>5-Star Rated on <a href="https://www.mybuilder.com" target="_blank" rel="noopener">MyBuilder</a></span>
-    </div>
-    <div class="trust-item">
-      <div class="icon">&#x1f6e1;</div>
-      <span>Fully Insured</span>
-    </div>
-    <div class="trust-item">
-      <div class="icon">&#x1f4b0;</div>
-      <span>Free No-Obligation Quotes</span>
+  <div class="about-hero">
+    <div class="about-hero-content">
+      <div class="hero-badge" style="margin: 0 auto 20px;">Family Run &bull; Based in Lingfield, Surrey</div>
+      <h1>We're <span class="highlight">HGN Bathrooms</span></h1>
+      <p>A small, local team that takes real pride in transforming bathrooms. No big crews, no strangers in your home — just Haydn doing what he loves, with Hope making sure everything runs smoothly.</p>
     </div>
   </div>
 
-  <!-- About Content -->
-  <section>
-    <div class="content-section">
-      <h2>Who Is HGN Bathrooms?</h2>
-      <p>HGN Bathrooms is run by Haydn — a professional bathroom installer based in Lingfield, Surrey, serving homeowners across Surrey, Kent and Sussex.</p>
+  <!-- Section Nav -->
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#team">The Team</a>
+    <a href="#process">How It Works</a>
+    <a href="#why-us">Why Choose Us</a>
+    <a href="index.html#contact">Get in Touch</a>
+  </nav>
 
-      <p>Haydn personally manages and carries out every project, from the initial consultation and design right through to the final clean-up. When you hire HGN Bathrooms, you're working directly with the person doing the work — no subcontractors, no miscommunication, no surprises.</p>
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-item"><div class="icon">&#x2714;</div><span>Local to Lingfield, Surrey</span></div>
+    <div class="trust-item"><div class="icon">&#x2B50;</div><span>5-Star Rated on MyBuilder</span></div>
+    <div class="trust-item"><div class="icon">&#x1f6e1;</div><span>Fully Insured</span></div>
+    <div class="trust-item"><div class="icon">&#x1f4ac;</div><span>Free Quotes — No Obligation</span></div>
+  </div>
 
-      <!-- TODO: Add a professional photo of Haydn here -->
-      <!-- <div style="margin:32px 0;border-radius:var(--radius);overflow:hidden;max-width:500px;">
-        <img src="images/haydn-profile.jpg" alt="Haydn, founder of HGN Bathrooms" style="width:100%;height:auto;">
-      </div> -->
+  <!-- Team -->
+  <section id="team">
+    <div class="team-section reveal">
+      <div class="section-header">
+        <div class="section-tag">The Team</div>
+        <h2>The people you'll actually speak to</h2>
+      </div>
+      <div class="team-grid">
 
-      <h3>What We Do</h3>
-      <p>We specialise in complete bathroom renovations — full strip-outs, plumbing, tiling, wall panelling, wet rooms, cloakrooms, en-suites and utility rooms. Whether you're refreshing a tired bathroom or building something from scratch, we handle every stage of the process.</p>
+        <!-- Haydn -->
+        <div class="team-card reveal">
+          <div class="team-avatar">&#x1f528;</div>
+          <h3>Haydn</h3>
+          <div class="team-role">Founder &amp; Lead Installer</div>
+          <p>Haydn grew up locally and has spent his career doing what he genuinely loves — walking into a tired, outdated bathroom and walking out having left something completely different behind.</p>
+          <p>He's hands-on from start to finish. Every site visit, every tile, every finishing touch is done by Haydn personally. You won't meet him once and then be handed off to a crew you've never seen before.</p>
+          <p>He has a real eye for how a space can work better — layouts, materials, light — and he'll tell you honestly what will look good and what won't. No upselling, no filler.</p>
+          <div class="team-tags">
+            <span class="team-tag">&#x1f4cd; Lingfield local</span>
+            <span class="team-tag">Full renovations</span>
+            <span class="team-tag">Wet rooms</span>
+            <span class="team-tag">Tiling</span>
+            <span class="team-tag">Plumbing</span>
+          </div>
+        </div>
 
-      <p>Our work includes:</p>
-      <ul>
-        <li><strong>Full bathroom renovations</strong> — strip-out, plumbing, tiling, fixtures and finishing</li>
-        <li><strong>Wet room installations</strong> — waterproof tanking, linear drains, level-access showers</li>
-        <li><strong>Plumbing services</strong> — Quooker taps, radiators, boiler connections, pipework</li>
-        <li><strong>Tiling and wall panelling</strong> — floor-to-ceiling tiling, wood slat panels, feature walls</li>
-        <li><strong>Cloakrooms and en-suites</strong> — small space design with space-saving fixtures</li>
-        <li><strong>Utility room fit-outs</strong> — plumbing, drainage, cabinetry and flooring</li>
-      </ul>
+        <!-- Hope -->
+        <div class="team-card reveal">
+          <div class="team-avatar">&#x1f4cb;</div>
+          <h3>Hope</h3>
+          <div class="team-role">Client Coordinator</div>
+          <p>Hope is Haydn's sister and the first person you'll hear from when you get in touch. She handles all bookings, quotes, scheduling and calls — so you always have a real person to talk to, not a voicemail.</p>
+          <p>If you have a question mid-project, need to rearrange a visit, or just want to know what's happening next, Hope is your point of contact. She'll make sure everything is clear, confirmed and stress-free from your end.</p>
+          <p>Between the two of them, Haydn and Hope cover every part of the process — the hands-on work and the communication around it.</p>
+          <div class="team-tags">
+            <span class="team-tag">Bookings &amp; scheduling</span>
+            <span class="team-tag">Quotes</span>
+            <span class="team-tag">Customer care</span>
+          </div>
+        </div>
 
-      <h3>Our Approach</h3>
-      <p>Every project starts with a free, no-obligation site visit. Haydn will discuss your ideas, take measurements, and put together a detailed quote with no hidden costs. We believe in honest pricing and clear communication throughout.</p>
+      </div>
+    </div>
+  </section>
 
-      <p>During the work, we keep things clean and tidy, protect your home, and keep you informed at every stage. Most bathroom renovations are completed in 5-10 working days, and we always aim to cause as little disruption as possible.</p>
+  <!-- Process -->
+  <section id="process">
+    <div class="process-section">
+      <div class="process-inner">
+        <div class="section-header">
+          <div class="section-tag">How It Works</div>
+          <h2>Simple from start to finish</h2>
+        </div>
+        <p class="section-sub">No complicated forms or confusing processes. Here's exactly what happens when you get in touch.</p>
 
-      <h3>Why Clients Choose Us</h3>
-      <ul>
-        <li><strong>One point of contact</strong> — Haydn manages and completes every job personally</li>
-        <li><strong>Attention to detail</strong> — from mitred tile edges to perfectly aligned grout lines</li>
-        <li><strong>Honest and transparent</strong> — clear quotes, no hidden extras, realistic timelines</li>
-        <li><strong>Fully insured</strong> — public liability insurance for your peace of mind</li>
-        <li><strong>5-star rated</strong> — consistently rated 5 stars on MyBuilder with genuine customer reviews</li>
-        <li><strong>Clean and respectful</strong> — we protect your home and clean up every day</li>
-      </ul>
+        <div class="process-steps">
 
-      <h3>Where We Work</h3>
-      <p>We're based in Lingfield, Surrey, and cover a wide area across the South East including Guildford, Reigate, Sevenoaks, Tonbridge, Tunbridge Wells, East Grinstead, Crawley, Horsham, Brighton, and many more. <a href="index.html#areas" style="color:var(--accent);font-weight:600;">See all areas we serve</a>.</p>
+          <div class="process-step reveal">
+            <div class="step-left">
+              <div class="step-number">1</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3>Get in touch</h3>
+              <p>Call, WhatsApp or drop us a message — whatever's easiest. Tell us a little about your bathroom and what you're thinking. Hope will come back to you quickly, usually the same day.</p>
+            </div>
+          </div>
 
-      <h3>Get in Touch</h3>
-      <p>Ready to start your bathroom project? Give Haydn a call on <a href="tel:07584624621" style="color:var(--accent);font-weight:600;">07584 624 621</a>, email <a href="mailto:info@hgnbathrooms.com" style="color:var(--accent);font-weight:600;">info@hgnbathrooms.com</a>, or <a href="https://wa.me/447584624621?text=Hi%2C%20I%27m%20interested%20in%20a%20quote." target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">WhatsApp us</a> for a free quote.</p>
+          <div class="process-step reveal">
+            <div class="step-left">
+              <div class="step-number">2</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3>We'll give you a call</h3>
+              <p>Before anything else, Hope will have a quick chat to understand what you're after, your rough timescales and whether we're the right fit. No hard sell — just a friendly conversation.</p>
+            </div>
+          </div>
 
-      <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;">
-        <a href="index.html#contact" class="btn-primary">Get a Free Quote</a>
-        <a href="index.html#portfolio" class="btn-outline-dark">View Our Work</a>
+          <div class="process-step reveal">
+            <div class="step-left">
+              <div class="step-number">3</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3>Haydn pops round to take a look</h3>
+              <p>We'll book a time that suits you for Haydn to visit, have a look at the space, talk through your ideas and take measurements. There's no charge for this and absolutely no obligation.</p>
+            </div>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-left">
+              <div class="step-number">4</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3>You receive a clear, itemised quote</h3>
+              <p>Hope will send over a written quote that breaks everything down — labour, materials, timescale. No vague estimates, no hidden extras. Take as long as you need to look it over.</p>
+            </div>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="step-left">
+              <div class="step-number">5</div>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+              <h3>We take care of the rest</h3>
+              <p>Once you're happy and ready to go, we'll book a start date and handle everything from there. Haydn keeps things clean and tidy throughout, and keeps you in the loop at every stage. You just come home to a new bathroom.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why-us">
+    <div class="why-section">
+      <div class="section-header reveal">
+        <div class="section-tag">Why Choose Us</div>
+        <h2>What makes us different</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card reveal">
+          <div class="why-icon">&#x1f3e0;</div>
+          <h4>We're genuinely local</h4>
+          <p>Haydn lives and works in Lingfield. He's not travelling hours to reach you and charging for it. Quick to respond, easy to reach, and has a reputation in the area to protect.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">&#x1f91d;</div>
+          <h4>One person does the job</h4>
+          <p>Haydn is on your project from day one to the last day. No handoffs, no strangers turning up, no crossed wires. You know exactly who's in your home.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">&#x1f4ac;</div>
+          <h4>Real people answer the phone</h4>
+          <p>Hope handles all communication — calls, messages, quotes. You'll always get a response from an actual person who knows your job, not a generic reply.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">&#x270f;&#xfe0f;</div>
+          <h4>Honest quotes, no surprises</h4>
+          <p>Every quote is itemised and in writing. If something changes during the job, we'll tell you before we do it — not after. The final bill won't be a shock.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">&#x2728;</div>
+          <h4>The finish is the point</h4>
+          <p>Haydn cares about how it looks at the end. Straight grout lines, clean silicone, tiles that line up properly. The small things matter because you'll see them every day.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon">&#x1f9f9;</div>
+          <h4>Clean and considerate</h4>
+          <p>We protect your floors, clean up each day, and treat your home with respect. A building site is unavoidable — but it doesn't need to be a mess.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -145,7 +370,7 @@
   <section id="reviews" style="background:var(--warm-light);">
     <div class="section-header reveal">
       <div class="section-tag">What Clients Say</div>
-      <h2>Customer Reviews</h2>
+      <h2>Straight from our customers</h2>
     </div>
     <div class="reviews-grid reveal">
       <div class="review-card">
@@ -157,7 +382,7 @@
       <div class="review-card">
         <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <blockquote>"Professional from start to finish. Our cloakroom went from an embarrassment to a showpiece. The slat panelling looks absolutely stunning. Highly recommend."</blockquote>
-        <div class="review-author">James & Lucy M.</div>
+        <div class="review-author">James &amp; Lucy M.</div>
         <div class="review-location">Sevenoaks, Kent</div>
       </div>
       <div class="review-card">
@@ -168,6 +393,17 @@
       </div>
     </div>
   </section>
+
+  <!-- CTA -->
+  <div class="about-cta">
+    <h2>Ready to get started?</h2>
+    <p>Drop us a message or give us a call — Hope will get back to you the same day.</p>
+    <div class="btn-row">
+      <a href="index.html#contact" class="btn-primary">Send Us a Message</a>
+      <a href="tel:07584624621" class="btn-outline-dark">Call 07584 624 621</a>
+      <a href="https://wa.me/447584624621?text=Hi%2C%20I%27d%20like%20to%20find%20out%20more%20about%20a%20bathroom%20renovation." target="_blank" rel="noopener" class="btn-outline-dark">WhatsApp Us</a>
+    </div>
+  </div>
 
   <!-- Profile Badges -->
   <div class="profile-badges">
@@ -184,8 +420,8 @@
     <div class="footer-left">&copy; 2026 HGN Bathrooms &bull; Haydn &bull; All rights reserved. &bull; <a href="privacy-policy.html" style="color:var(--text-muted);text-decoration:underline;">Privacy Policy</a></div>
     <div class="footer-socials">
       <a href="https://instagram.com/hgnbathrooms" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
-      <a href="tel:07584624621" aria-label="Phone">&#x1f4de;</a>
-      <a href="mailto:info@hgnbathrooms.com" aria-label="Email">&#x2709;</a>
+      <a href="tel:07584624621" aria-label="Phone">&#128222;</a>
+      <a href="mailto:info@hgnbathrooms.com" aria-label="Email">&#9993;</a>
     </div>
   </footer>
 
@@ -197,7 +433,7 @@
   <!-- Mobile CTA Bar -->
   <div class="mobile-cta-bar">
     <div class="cta-buttons">
-      <a href="tel:07584624621" class="cta-btn cta-btn-call">&#x1f4de; Call Now</a>
+      <a href="tel:07584624621" class="cta-btn cta-btn-call">&#128222; Call Now</a>
       <a href="https://wa.me/447584624621?text=Hi%2C%20I%27m%20interested%20in%20a%20quote." class="cta-btn cta-btn-wa" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
@@ -218,6 +454,18 @@
       });
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Highlight active section in section nav
+    const sections = document.querySelectorAll('section[id], div[id]');
+    const navLinks = document.querySelectorAll('.section-nav a[href^="#"]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
   </script>
 </body>
 </html>
