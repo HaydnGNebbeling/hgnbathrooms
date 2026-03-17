@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HGN Bathrooms — SEO Setup & Strategy Report | March 2026</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --navy: #1a3a5c;
+      --blue: #2c5aa0;
+      --light-blue: #eef4fb;
+      --text: #1e2530;
+      --muted: #5a6478;
+      --border: #e2e8f0;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --bg: #f8fafc;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; font-size: 15px; }
+
+    /* ── COVER ── */
+    .cover {
+      background: var(--navy); color: #fff;
+      padding: 72px 64px 64px; min-height: 280px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    .cover-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .cover h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.6rem; font-weight: 700; line-height: 1.15; margin-bottom: 12px; }
+    .cover h1 span { color: #5b9bd5; }
+    .cover-sub { font-size: 1rem; color: rgba(255,255,255,0.65); margin-bottom: 36px; }
+    .cover-meta { display: flex; gap: 40px; flex-wrap: wrap; }
+    .cover-meta-item { display: flex; flex-direction: column; gap: 4px; }
+    .cover-meta-item .label { font-size: 0.72rem; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .cover-meta-item .value { font-weight: 600; font-size: 0.95rem; color: rgba(255,255,255,0.9); }
+
+    /* ── LAYOUT ── */
+    .doc { max-width: 900px; margin: 0 auto; padding: 0 32px 80px; }
+    @media print {
+      .doc { max-width: 100%; padding: 0 20px; }
+      .cover { padding: 40px 32px 32px; }
+      .no-print { display: none !important; }
+      .page-break { page-break-before: always; }
+    }
+
+    /* ── SECTIONS ── */
+    .section { margin-top: 56px; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--navy); border-left: 3px solid var(--navy); padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .section h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+    .section p { color: var(--muted); margin-bottom: 12px; line-height: 1.75; }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* ── STAT CARDS ── */
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+    @media (max-width: 700px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+    .stat-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; }
+    .stat-card .number { font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 6px; }
+    .stat-card .label { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+
+    /* ── ACHIEVEMENT LIST ── */
+    .achieve-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .achieve-item {
+      background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 16px 20px; display: flex; gap: 16px; align-items: flex-start;
+    }
+    .achieve-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+    .achieve-item h4 { font-size: 0.93rem; font-weight: 600; margin-bottom: 3px; }
+    .achieve-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+    .tag-done { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--green-light); color: var(--green); padding: 2px 8px; border-radius: 50px; margin-left: 8px; vertical-align: middle; }
+
+    /* ── TWO COL ── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+    @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+    .info-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    .info-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .info-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .info-card ul li { font-size: 0.88rem; color: var(--muted); display: flex; align-items: flex-start; gap: 8px; }
+    .info-card ul li::before { content: '→'; color: var(--navy); font-weight: 700; flex-shrink: 0; }
+
+    /* ── GA4 EXPLAINER ── */
+    .ga4-block { background: var(--light-blue); border: 1px solid #c3d9f0; border-radius: 12px; padding: 28px; margin-top: 20px; }
+    .ga4-block h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; color: var(--navy); }
+    .ga4-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 600px) { .ga4-grid { grid-template-columns: 1fr; } }
+    .ga4-item { background: #fff; border-radius: 8px; padding: 16px; }
+    .ga4-item .ga4-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); margin-bottom: 6px; }
+    .ga4-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+    /* ── TIMELINE ── */
+    .timeline { margin-top: 24px; display: flex; flex-direction: column; gap: 0; }
+    .tl-item { display: grid; grid-template-columns: 100px 1fr; gap: 20px; padding-bottom: 32px; position: relative; }
+    .tl-item:last-child { padding-bottom: 0; }
+    .tl-left { text-align: right; padding-top: 4px; }
+    .tl-when { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--navy); }
+    .tl-right { border-left: 2px solid var(--border); padding-left: 24px; position: relative; }
+    .tl-right::before { content: ''; position: absolute; left: -6px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--navy); }
+    .tl-right h4 { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; }
+    .tl-right p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+    /* ── ACTION TABLE ── */
+    .action-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+    .action-table th { background: var(--navy); color: #fff; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; padding: 12px 16px; text-align: left; }
+    .action-table td { padding: 12px 16px; font-size: 0.88rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .action-table tr:last-child td { border-bottom: none; }
+    .action-table tr:nth-child(even) td { background: #fafbfc; }
+    .priority-high { display: inline-block; background: #fee2e2; color: #dc2626; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .priority-med { display: inline-block; background: var(--amber-light); color: var(--amber); font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .priority-low { display: inline-block; background: var(--green-light); color: var(--green); font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* ── REVIEW TEMPLATE ── */
+    .template-box { background: #fff; border: 2px dashed var(--border); border-radius: 12px; padding: 28px 32px; margin-top: 20px; }
+    .template-box .template-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+    .template-box p { color: var(--text); font-size: 0.93rem; line-height: 1.8; margin-bottom: 12px; }
+    .template-box p:last-child { margin-bottom: 0; }
+    .template-note { font-size: 0.82rem; color: var(--muted); margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-style: italic; }
+
+    /* ── PRINT BTN ── */
+    .print-bar { background: var(--navy); color: #fff; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .print-bar p { font-size: 0.85rem; color: rgba(255,255,255,0.7); margin: 0; }
+    .print-btn { background: #fff; color: var(--navy); font-weight: 700; font-size: 0.85rem; padding: 10px 24px; border-radius: 50px; border: none; cursor: pointer; font-family: 'Inter', sans-serif; }
+    .print-btn:hover { background: #e8eef6; }
+
+    hr.divider { border: none; border-top: 1px solid var(--border); margin: 48px 0 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Print Bar -->
+  <div class="print-bar no-print">
+    <p>HGN Bathrooms — SEO Setup & Strategy Report &nbsp;|&nbsp; March 2026</p>
+    <button class="print-btn" onclick="window.print()">&#128438; Print / Save as PDF</button>
+  </div>
+
+  <!-- Cover -->
+  <div class="cover">
+    <div class="cover-label">HGN Bathrooms &nbsp;/&nbsp; Digital Strategy</div>
+    <h1>SEO Setup &amp; <span>Growth Plan</span></h1>
+    <p class="cover-sub">What we built, how it works, and what happens next.</p>
+    <div class="cover-meta">
+      <div class="cover-meta-item">
+        <span class="label">Prepared by</span>
+        <span class="value">Hope &amp; Claude (AI)</span>
+      </div>
+      <div class="cover-meta-item">
+        <span class="label">Date</span>
+        <span class="value">17 March 2026</span>
+      </div>
+      <div class="cover-meta-item">
+        <span class="label">Website</span>
+        <span class="value">hgnbathrooms.co.uk</span>
+      </div>
+      <div class="cover-meta-item">
+        <span class="label">Status</span>
+        <span class="value">✅ Live &amp; Tracking</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc">
+
+    <!-- SECTION 1: WHAT WE ACHIEVED -->
+    <div class="section">
+      <div class="section-label">Section 1</div>
+      <h2>What We Built Today</h2>
+      <p>In a single session, we took hgnbathrooms.co.uk from a basic starter site to a properly structured, SEO-ready local business website. Here's a snapshot of where it stands now.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="number">55</div>
+          <div class="label">Total pages live</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">31</div>
+          <div class="label">Location pages</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">14</div>
+          <div class="label">Blog articles</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">51</div>
+          <div class="label">URLs in sitemap</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENT LIST -->
+    <div class="section">
+      <div class="section-label">Completed work</div>
+      <h2>Full List of Improvements</h2>
+
+      <div class="achieve-list">
+
+        <div class="achieve-item">
+          <div class="achieve-icon">🗺️</div>
+          <div>
+            <h4>31 Local Area Pages <span class="tag-done">Done</span></h4>
+            <p>Dedicated pages for every town within ~20 miles of Lingfield — covering Surrey (16 towns), Kent (5 towns) and Sussex (10 towns). Each page has a unique title, description and local village references to rank for searches like "bathroom renovation Oxted" or "bathroom renovation Sevenoaks".</p>
+          </div>
+        </div>
+
+        <div class="achieve-item">
+          <div class="achieve-icon">✍️</div>
+          <div>
+            <h4>14 SEO Blog Articles <span class="tag-done">Done</span></h4>
+            <p>A full 12-month content calendar written and published — covering the most-searched bathroom renovation topics in the UK. Each post targets a specific search query (e.g. "how much does a bathroom renovation cost", "wet room installation cost UK"), includes structured FAQ data for Google, and ends with a quote request CTA.</p>
+          </div>
+        </div>
+
+        <div class="achieve-item">
+          <div class="achieve-icon">📊</div>
+          <div>
+            <h4>Google Analytics 4 (GA4) Connected <span class="tag-done">Done</span></h4>
+            <p>Live tracking installed across all 55 pages. GA4 property ID: G-BWXRPFK6GN. From today, every visit, page view, and contact form submission is being recorded. Data will begin to show within 24–48 hours.</p>
+          </div>
+        </div>
+
+        <div class="achieve-item">
+          <div class="achieve-icon">🔍</div>
+          <div>
+            <h4>Google Search Console Verified <span class="tag-done">Done</span></h4>
+            <p>Site verified in GSC. This is Google's own tool — it tells us exactly which searches the website appears for, how many people click through, and whether Google has any issues indexing the pages.</p>
+          </div>
+        </div>
+
+        <div class="achieve-item">
+          <div class="achieve-icon">⚙️</div>
+          <div>
+            <h4>Technical SEO Fixes <span class="tag-done">Done</span></h4>
+            <p>Canonical URL mismatches fixed across all service pages. Unique meta titles and descriptions applied to all 31 location pages. Structured data (Schema markup) validated on all pages. robots.txt and sitemap.xml confirmed correct. Page speed improvements: hero image preloading added across all pages.</p>
+          </div>
+        </div>
+
+        <div class="achieve-item">
+          <div class="achieve-icon">👥</div>
+          <div>
+            <h4>About Page Redesigned <span class="tag-done">Done</span></h4>
+            <p>Complete rewrite with four clear sections: Meet the Team (Haydn + Hope), How It Works (5-step process), Why Choose Us, and Reviews. Replaced a wall of text with a clean, scannable layout that feels human and local — not corporate.</p>
+          </div>
+        </div>
+
+        <div class="achieve-item">
+          <div class="achieve-icon">🤖</div>
+          <div>
+            <h4>Weekly SEO Audit Automated <span class="tag-done">Done</span></h4>
+            <p>GitHub Actions workflow set up to run every Monday. It checks all 55 pages automatically, flags any errors, and creates a report. Hope receives an email notification with the full results. No manual checking required.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 2: GOOGLE ANALYTICS -->
+    <div class="section page-break">
+      <div class="section-label">Section 2</div>
+      <h2>Google Analytics 4 — What It Does &amp; Why It Matters</h2>
+      <p>Google Analytics 4 (GA4) is now live on hgnbathrooms.co.uk. Think of it as a dashboard that tells you exactly what's happening on the website — where visitors come from, what they look at, and whether they get in touch.</p>
+
+      <div class="ga4-block">
+        <h3>What GA4 tracks for HGN Bathrooms</h3>
+        <div class="ga4-grid">
+          <div class="ga4-item">
+            <div class="ga4-label">Where visitors come from</div>
+            <p>Google search, direct, social media, referral links. Shows which marketing is working and which isn't.</p>
+          </div>
+          <div class="ga4-item">
+            <div class="ga4-label">Which pages get the most traffic</div>
+            <p>You'll be able to see exactly which location pages (Guildford, Oxted, Redhill etc.) are bringing in visitors.</p>
+          </div>
+          <div class="ga4-item">
+            <div class="ga4-label">Which areas generate enquiries</div>
+            <p>Combined with the contact form, you can start to see which towns send the most leads — and focus more effort there.</p>
+          </div>
+          <div class="ga4-item">
+            <div class="ga4-label">How people use the site</div>
+            <p>How long they spend, which pages they visit before getting in touch, and where they drop off.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:20px;">
+        <div class="info-card">
+          <h3>📍 Where to find the data</h3>
+          <ul>
+            <li><strong>Realtime</strong> — see live visitors right now</li>
+            <li><strong>Reports → Engagement → Pages and screens</strong> — see which pages get traffic</li>
+            <li><strong>Reports → Acquisition → Traffic acquisition</strong> — see where visitors come from</li>
+            <li>Filter page paths by <em>bathroom-renovation-</em> to see location page performance</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>📅 Data timeline</h3>
+          <ul>
+            <li><strong>Days 1–14:</strong> Realtime works, reports show very little</li>
+            <li><strong>Weeks 3–4:</strong> First meaningful data — pages, sources, locations</li>
+            <li><strong>Month 2:</strong> Enough to spot which towns are working</li>
+            <li><strong>Month 3+:</strong> Solid trends — use to guide where to focus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: SEO PLAN -->
+    <div class="section">
+      <div class="section-label">Section 3</div>
+      <h2>SEO Plan Going Forward</h2>
+      <p>SEO is not a one-time job — it builds over time. The work done today gives the site a strong foundation. What follows is the ongoing plan to grow visibility and generate more local enquiries.</p>
+
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-when">Every Monday</div></div>
+          <div class="tl-right">
+            <h4>Automated SEO audit email</h4>
+            <p>GitHub runs a health check on all 55 pages and emails Hope a report. Any broken pages, missing tags or errors are flagged automatically — no manual work needed.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-when">Monthly</div></div>
+          <div class="tl-right">
+            <h4>Review GSC performance data</h4>
+            <p>Check Google Search Console for new queries, pages with high impressions but low click rates, and any new coverage issues. Use this to decide which pages to improve or which new content to write.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-when">Ongoing</div></div>
+          <div class="tl-right">
+            <h4>Google reviews</h4>
+            <p>Every new 5-star review on the Google Business Profile directly improves ranking in the local map pack. This is the single highest-impact action Haydn can take. A review request template is included in this document (Section 5).</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-when">Quarterly</div></div>
+          <div class="tl-right">
+            <h4>Content and location review</h4>
+            <p>Look at which location pages are getting traffic and which aren't. Add new blog posts targeting questions that are getting search impressions. Expand or refresh pages that are ranking but not converting to clicks.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-left"><div class="tl-when">Annually</div></div>
+          <div class="tl-right">
+            <h4>Full site review</h4>
+            <p>Update pricing references, refresh blog post dates, check that all location pages still reflect current service areas, and review the overall site structure as the business grows.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 4: NEXT ACTIONS -->
+    <div class="section">
+      <div class="section-label">Section 4</div>
+      <h2>Immediate Actions — Next 30 Days</h2>
+      <p>These are the highest-priority tasks to complete in the coming weeks to make the most of what's been set up.</p>
+
+      <table class="action-table">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Who</th>
+            <th>Priority</th>
+            <th>Why It Matters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Submit sitemap in Google Search Console</strong><br><small>GSC → Sitemaps → submit hgnbathrooms.co.uk/sitemap.xml</small></td>
+            <td>Hope</td>
+            <td><span class="priority-high">High</span></td>
+            <td>Tells Google to crawl all 55 pages immediately</td>
+          </tr>
+          <tr>
+            <td><strong>Request indexing for 10 new location pages</strong><br><small>GSC → URL Inspection → Request Indexing (10 per day)</small></td>
+            <td>Hope</td>
+            <td><span class="priority-high">High</span></td>
+            <td>Gets new pages into Google's index faster</td>
+          </tr>
+          <tr>
+            <td><strong>Watch GitHub repo to receive weekly audit emails</strong><br><small>github.com/HaydnGNebbeling/hgnbathrooms → Watch → All Activity</small></td>
+            <td>Hope</td>
+            <td><span class="priority-high">High</span></td>
+            <td>Ensures the automated audit report lands in your inbox</td>
+          </tr>
+          <tr>
+            <td><strong>Ask every completed job for a Google review</strong><br><small>Use the template in Section 5 — text or WhatsApp</small></td>
+            <td>Haydn + Hope</td>
+            <td><span class="priority-high">High</span></td>
+            <td>Directly improves Google Business Profile ranking</td>
+          </tr>
+          <tr>
+            <td><strong>Add photos to Google Business Profile</strong><br><small>Before/after photos of completed jobs</small></td>
+            <td>Haydn</td>
+            <td><span class="priority-med">Medium</span></td>
+            <td>Increases profile engagement and trust</td>
+          </tr>
+          <tr>
+            <td><strong>Add real photos to the website</strong><br><small>Replace stock images with Haydn's own project photos</small></td>
+            <td>Haydn + Hope</td>
+            <td><span class="priority-med">Medium</span></td>
+            <td>Biggest trust signal for potential customers</td>
+          </tr>
+          <tr>
+            <td><strong>Check GA4 Realtime is recording visits</strong><br><small>analytics.google.com → Reports → Realtime</small></td>
+            <td>Hope</td>
+            <td><span class="priority-low">Done / Check</span></td>
+            <td>Confirms tracking is working correctly</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SECTION 5: REVIEW TEMPLATE -->
+    <div class="section page-break">
+      <div class="section-label">Section 5</div>
+      <h2>Google Review Request Templates</h2>
+      <p>Reviews are the fastest way to improve local search ranking. Ask every happy customer — ideally the day after the job finishes while it's still fresh. Below are three versions: WhatsApp/text, email, and a verbal ask.</p>
+
+      <div class="achieve-item" style="margin-top:20px; background:#fff; border: 1px solid var(--border);">
+        <div class="achieve-icon">📱</div>
+        <div><h4>WhatsApp / Text Message</h4><p style="color:var(--muted);font-size:0.82rem;">Short, casual, easy to reply to. Best sent the day after completion.</p></div>
+      </div>
+      <div class="template-box">
+        <div class="template-label">Template — WhatsApp / SMS</div>
+        <p>Hi [Name], it was great working on your bathroom — really pleased with how it came out! If you've got a spare two minutes, a Google review would mean the world to us. Here's the link: [YOUR GOOGLE REVIEW LINK]</p>
+        <p>Totally fine if not — just let us know if you ever need anything else. Thanks again, Haydn 👍</p>
+        <p class="template-note">Tip: Replace [YOUR GOOGLE REVIEW LINK] with your Google Business Profile review link. Find it in Google Business Profile → Ask for reviews → Copy link.</p>
+      </div>
+
+      <div class="achieve-item" style="margin-top:24px; background:#fff; border: 1px solid var(--border);">
+        <div class="achieve-icon">✉️</div>
+        <div><h4>Email Version</h4><p style="color:var(--muted);font-size:0.82rem;">For customers who prefer email. Slightly more formal but still friendly.</p></div>
+      </div>
+      <div class="template-box">
+        <div class="template-label">Template — Email</div>
+        <p>Subject: Thank you — and a small favour</p>
+        <p>Hi [Name],</p>
+        <p>Thank you so much for choosing HGN Bathrooms for your renovation. It was a pleasure working in your home and I hope you're really happy with the result.</p>
+        <p>If you have a couple of minutes, leaving us a Google review would be a huge help — it makes a real difference to a small local business like ours.</p>
+        <p>Here's the link: [YOUR GOOGLE REVIEW LINK]</p>
+        <p>No pressure at all — and don't hesitate to get in touch if you ever need anything in future.</p>
+        <p>Many thanks,<br>Haydn<br>HGN Bathrooms<br>07584 624 621</p>
+      </div>
+
+      <div class="achieve-item" style="margin-top:24px; background:#fff; border: 1px solid var(--border);">
+        <div class="achieve-icon">🗣️</div>
+        <div><h4>Verbal Ask (on the day)</h4><p style="color:var(--muted);font-size:0.82rem;">The most natural moment to ask is right after the customer sees the finished bathroom for the first time.</p></div>
+      </div>
+      <div class="template-box">
+        <div class="template-label">What to say in person</div>
+        <p>"Really glad you like it. If you get a chance, a Google review genuinely helps us out — it only takes a couple of minutes. I'll send you a link on WhatsApp now so you've got it."</p>
+        <p class="template-note">Then send the WhatsApp template immediately while you're still there. The conversion rate is far higher when the link is sent on the spot.</p>
+      </div>
+
+      <div class="info-card" style="margin-top:24px;">
+        <h3>📌 How to find your Google review link</h3>
+        <ul>
+          <li>Go to <strong>business.google.com</strong></li>
+          <li>Select your HGN Bathrooms profile</li>
+          <li>Click <strong>"Ask for reviews"</strong></li>
+          <li>Copy the short link and save it in your phone contacts for quick access</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 6: REPORTING -->
+    <div class="section">
+      <div class="section-label">Section 6</div>
+      <h2>How We'll Report on Progress</h2>
+      <p>You don't need to become an SEO expert. Here's a simple summary of what to check and when.</p>
+
+      <table class="action-table">
+        <thead>
+          <tr>
+            <th>When</th>
+            <th>What to check</th>
+            <th>Where</th>
+            <th>What you're looking for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Every Monday</strong></td>
+            <td>Weekly SEO audit email</td>
+            <td>GitHub notification (email)</td>
+            <td>Any ❌ errors — flag to Hope to fix</td>
+          </tr>
+          <tr>
+            <td><strong>Monthly</strong></td>
+            <td>Search performance</td>
+            <td>Google Search Console → Performance</td>
+            <td>Are impressions and clicks going up month on month?</td>
+          </tr>
+          <tr>
+            <td><strong>Monthly</strong></td>
+            <td>Location page traffic</td>
+            <td>GA4 → Pages and Screens, filter by "bathroom-renovation-"</td>
+            <td>Which towns are getting visits? Which aren't?</td>
+          </tr>
+          <tr>
+            <td><strong>Monthly</strong></td>
+            <td>Blog post performance</td>
+            <td>GA4 → Pages and Screens, filter by "/blog/"</td>
+            <td>Which articles are getting read? Are people clicking through to contact?</td>
+          </tr>
+          <tr>
+            <td><strong>Quarterly</strong></td>
+            <td>Full review with Hope</td>
+            <td>This document + GSC + GA4</td>
+            <td>Are enquiries increasing? Which areas to focus on next?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section" style="margin-top:32px;">
+      <p style="font-size:0.85rem; color:var(--muted);">Prepared by Hope Nebbeling (Client Coordinator, HGN Bathrooms) with AI assistance &bull; 17 March 2026 &bull; hgnbathrooms.co.uk</p>
+      <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">For questions about anything in this document, contact Hope on 07584 624 621 or info@hgnbathrooms.com</p>
+    </div>
+
+  </div>
+
+  <script>
+    // Smooth print
+    document.querySelector('.print-btn').addEventListener('click', () => window.print());
+  </script>
+</body>
+</html>
