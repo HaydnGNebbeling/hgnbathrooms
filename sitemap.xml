@@ -116,9 +116,59 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Location Pages - New (closest to Lingfield) -->
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-oxted.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-godstone.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-horley.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-redhill.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-banstead.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-leatherhead.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Location Pages - Kent -->
   <url>
     <loc>https://hgnbathrooms.co.uk/bathroom-renovation-sevenoaks.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-edenbridge.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-westerham.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -131,24 +181,6 @@
   </url>
   <url>
     <loc>https://hgnbathrooms.co.uk/bathroom-renovation-tunbridge-wells.html</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-maidstone.html</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-ashford.html</loc>
-    <lastmod>2026-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hgnbathrooms.co.uk/bathroom-renovation-edenbridge.html</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
