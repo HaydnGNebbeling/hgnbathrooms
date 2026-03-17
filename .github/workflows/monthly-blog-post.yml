@@ -1,0 +1,189 @@
+name: Monthly Blog Post
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'  # 1st of every month at 9am UTC
+  workflow_dispatch:       # Allow manual trigger
+
+jobs:
+  generate-blog-post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Anthropic SDK
+        run: npm install @anthropic-ai/sdk
+
+      - name: Generate blog post
+        id: generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node << 'EOF'
+          const Anthropic = require('@anthropic-ai/sdk');
+          const fs = require('fs');
+          const path = require('path');
+
+          const client = new Anthropic();
+
+          // Rotating topic list — cycles through monthly
+          const topics = [
+            { slug: 'small-bathroom-renovation-ideas', title: 'Small Bathroom Renovation Ideas That Maximise Space', keyword: 'small bathroom renovation ideas UK' },
+            { slug: 'bathroom-tiles-guide', title: 'How to Choose Bathroom Tiles: A Complete Guide', keyword: 'how to choose bathroom tiles UK' },
+            { slug: 'wet-room-cost-guide', title: 'Wet Room Installation Cost Guide 2026', keyword: 'wet room installation cost UK 2026' },
+            { slug: 'cloakroom-conversion-ideas', title: 'Cloakroom Conversion Ideas & Costs for UK Homes', keyword: 'cloakroom conversion cost UK' },
+            { slug: 'bathroom-renovation-planning', title: 'How to Plan a Bathroom Renovation: Step-by-Step Guide', keyword: 'how to plan a bathroom renovation UK' },
+            { slug: 'bathroom-fitter-checklist', title: 'How to Choose a Bathroom Fitter: 10 Questions to Ask', keyword: 'how to choose a bathroom fitter UK' },
+            { slug: 'ensuite-bathroom-ideas', title: 'En-Suite Bathroom Ideas & Costs for UK Homes', keyword: 'en-suite bathroom ideas UK' },
+            { slug: 'bathroom-renovation-mistakes', title: '7 Bathroom Renovation Mistakes to Avoid', keyword: 'bathroom renovation mistakes UK' },
+            { slug: 'underfloor-heating-bathroom', title: 'Underfloor Heating in Bathrooms: Is It Worth It?', keyword: 'underfloor heating bathroom cost UK' },
+            { slug: 'bathroom-storage-ideas', title: 'Clever Bathroom Storage Ideas for Every Size Room', keyword: 'bathroom storage ideas UK' },
+            { slug: 'freestanding-bath-guide', title: 'Freestanding Bath Guide: Costs, Styles & Plumbing Needs', keyword: 'freestanding bath UK cost' },
+            { slug: 'bathroom-lighting-guide', title: 'Bathroom Lighting Ideas: Zones, Safety & Style', keyword: 'bathroom lighting ideas UK' },
+          ];
+
+          const monthIndex = new Date().getMonth(); // 0-11
+          const topic = topics[monthIndex % topics.length];
+          const date = new Date().toISOString().split('T')[0];
+          const year = new Date().getFullYear();
+
+          async function generate() {
+            const message = await client.messages.create({
+              model: 'claude-opus-4-6',
+              max_tokens: 4000,
+              messages: [{
+                role: 'user',
+                content: `Write a complete SEO-optimised blog post for HGN Bathrooms (hgnbathrooms.co.uk), a bathroom renovation specialist based in Lingfield, Surrey, covering Surrey, Kent and Sussex.
+
+          Topic: ${topic.title}
+          Primary keyword: ${topic.keyword}
+          Year: ${year}
+
+          Requirements:
+          - Owner is Haydn (first name only), a trusted local bathroom specialist
+          - Write in a warm, professional, helpful tone — not corporate
+          - 800-1000 words of body content
+          - Include: intro, 3-4 H2 sections, a practical tips section, a CTA at the end
+          - CTA should mention free quotes and phone number 07584 624 621
+          - Mention Surrey, Kent or Sussex context where natural
+          - No fluff, no generic filler — genuinely useful advice
+
+          Return ONLY the HTML body content between <article> tags. Include H1, H2s, paragraphs, and an unordered list where appropriate. No <html>, <head> or <body> tags.`
+              }]
+            });
+
+            const articleContent = message.content[0].text;
+
+            // Build full HTML page
+            const html = `<!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>${topic.title} | HGN Bathrooms</title>
+            <meta name="description" content="Expert advice on ${topic.keyword.toLowerCase()}. Tips and guidance from Haydn at HGN Bathrooms, serving Surrey, Kent &amp; Sussex.">
+            <meta property="og:title" content="${topic.title} | HGN Bathrooms">
+            <meta property="og:description" content="Expert advice from a professional bathroom installer in Surrey, Kent &amp; Sussex.">
+            <meta property="og:type" content="article">
+            <meta property="og:url" content="https://hgnbathrooms.co.uk/blog/${topic.slug}.html">
+            <link rel="canonical" href="https://hgnbathrooms.co.uk/blog/${topic.slug}.html">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": "${topic.title}",
+              "datePublished": "${date}",
+              "dateModified": "${date}",
+              "author": { "@type": "Person", "name": "Haydn" },
+              "publisher": {
+                "@type": "LocalBusiness",
+                "name": "HGN Bathrooms",
+                "url": "https://hgnbathrooms.co.uk"
+              },
+              "mainEntityOfPage": "https://hgnbathrooms.co.uk/blog/${topic.slug}.html"
+            }
+            </script>
+            <link rel="stylesheet" href="../styles.css">
+            <!-- Google Analytics 4 -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWXRPFK6GN"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-BWXRPFK6GN');
+            </script>
+          </head>
+          <body>
+
+            <!-- Nav -->
+            <nav id="nav">
+              <a href="../index.html" class="nav-logo">HGN <span>Bathrooms</span></a>
+              <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../bathroom-renovations.html">Services</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Get a Quote</a></li>
+              </ul>
+            </nav>
+
+            <!-- Blog Post -->
+            <main style="padding-top: 100px; max-width: 800px; margin: 0 auto; padding-left: 24px; padding-right: 24px; padding-bottom: 80px;">
+              <div style="margin-bottom: 16px;">
+                <a href="../blog.html" style="color: var(--accent); font-size: 0.85rem;">← Back to Blog</a>
+              </div>
+              <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 32px;">${date} &nbsp;·&nbsp; HGN Bathrooms</div>
+
+              ${articleContent}
+            </main>
+
+            <!-- Footer -->
+            <footer style="background: var(--bg-hero); color: rgba(255,255,255,0.7); padding: 40px; text-align: center; font-size: 0.85rem;">
+              <p>© ${year} HGN Bathrooms · Lingfield, Surrey · <a href="tel:07584624621" style="color: var(--warm);">07584 624 621</a></p>
+              <p style="margin-top: 8px;"><a href="../privacy-policy.html" style="color: rgba(255,255,255,0.5);">Privacy Policy</a></p>
+            </footer>
+
+            <script src="../nav.js" defer></script>
+          </body>
+          </html>`;
+
+            fs.writeFileSync(`blog/${topic.slug}.html`, html);
+            console.log(`Generated: blog/${topic.slug}.html`);
+
+            // Write metadata for next step
+            fs.writeFileSync('/tmp/blog-meta.json', JSON.stringify({ slug: topic.slug, title: topic.title, date }));
+          }
+
+          generate().catch(console.error);
+          EOF
+
+      - name: Update blog index and sitemap
+        run: |
+          META=$(cat /tmp/blog-meta.json)
+          SLUG=$(echo $META | node -e "const d=require('fs').readFileSync('/dev/stdin','utf8'); console.log(JSON.parse(d).slug)")
+          TITLE=$(echo $META | node -e "const d=require('fs').readFileSync('/dev/stdin','utf8'); console.log(JSON.parse(d).title)")
+          DATE=$(echo $META | node -e "const d=require('fs').readFileSync('/dev/stdin','utf8'); console.log(JSON.parse(d).date)")
+
+          # Add to sitemap if not already there
+          URL="https://hgnbathrooms.co.uk/blog/${SLUG}.html"
+          if ! grep -q "$URL" sitemap.xml; then
+            sed -i "s|</urlset>|  <url>\n    <loc>${URL}</loc>\n    <lastmod>${DATE}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n</urlset>|" sitemap.xml
+            echo "Added $URL to sitemap"
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "HGN Blog Bot"
+          git config user.email "bot@hgnbathrooms.co.uk"
+          git add blog/ sitemap.xml
+          git commit -m "feat(blog): auto-generate monthly post for $(date '+%B %Y')"
+          git push
