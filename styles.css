@@ -54,7 +54,7 @@ nav.scrolled {
   box-shadow: 0 4px 20px rgba(26, 58, 92, 0.12);
 }
 .nav-logo { display: flex; align-items: center; }
-.nav-logo img { height: 72px; width: auto; display: block; }
+.nav-logo img { height: 95px; width: auto; display: block; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a {
   font-size: 0.82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px;
