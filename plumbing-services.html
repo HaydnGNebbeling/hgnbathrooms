@@ -21,23 +21,27 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "HGN Bathrooms",
-    "description": "Professional plumbing services across Surrey, Kent and Sussex including bathroom plumbing, radiator installation, boiler connections and Quooker tap fitting.",
-    "url": "https://hgnbathrooms.co.uk/plumbing-services",
-    "telephone": "+441293804790",
-    "email": "info@hgnbathrooms.com",
-    "image": "https://hgnbathrooms.co.uk/images/luxury-bathroom.jpg",
-    "founder": { "@type": "Person", "name": "Haydn Nebbeling" },
+    "@type": "Service",
+    "@id": "https://hgnbathrooms.co.uk/plumbing-services.html#service",
+    "serviceType": "Plumbing",
+    "name": "Plumbing Services Surrey, Kent & Sussex",
+    "description": "Bathroom plumbing, pipework, leak repairs and replacement installations.",
+    "url": "https://hgnbathrooms.co.uk/plumbing-services.html",
+    "provider": { "@id": "https://hgnbathrooms.co.uk/#business" },
     "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Surrey" },
-      { "@type": "AdministrativeArea", "name": "Kent" },
-      { "@type": "AdministrativeArea", "name": "Sussex" }
-    ],
-    "serviceType": "Plumbing Services",
-    "sameAs": [
-      "https://instagram.com/hgnbathrooms",
-      "https://www.google.com/maps/place/HGN+Bathrooms"
+      {"@type":"AdministrativeArea","name":"Surrey"},
+      {"@type":"AdministrativeArea","name":"Kent"},
+      {"@type":"AdministrativeArea","name":"Sussex"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://hgnbathrooms.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Plumbing Services"}
     ]
   }
   </script>

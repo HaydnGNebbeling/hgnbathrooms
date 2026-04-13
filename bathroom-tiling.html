@@ -21,23 +21,27 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "HGN Bathrooms",
-    "description": "Expert bathroom tiling and wall panelling services across Surrey, Kent and Sussex, including floor-to-ceiling tiling, feature walls and wood slat panelling.",
-    "url": "https://hgnbathrooms.co.uk/bathroom-tiling",
-    "telephone": "+441293804790",
-    "email": "info@hgnbathrooms.com",
-    "image": "https://hgnbathrooms.co.uk/images/geometric-bathroom.jpg",
-    "founder": { "@type": "Person", "name": "Haydn Nebbeling" },
+    "@type": "Service",
+    "@id": "https://hgnbathrooms.co.uk/bathroom-tiling.html#service",
+    "serviceType": "Bathroom Tiling",
+    "name": "Bathroom Tiling Surrey, Kent & Sussex",
+    "description": "Professional wall and floor tiling — porcelain, ceramic, natural stone and large-format.",
+    "url": "https://hgnbathrooms.co.uk/bathroom-tiling.html",
+    "provider": { "@id": "https://hgnbathrooms.co.uk/#business" },
     "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Surrey" },
-      { "@type": "AdministrativeArea", "name": "Kent" },
-      { "@type": "AdministrativeArea", "name": "Sussex" }
-    ],
-    "serviceType": "Bathroom Tiling and Wall Panelling",
-    "sameAs": [
-      "https://instagram.com/hgnbathrooms",
-      "https://www.google.com/maps/place/HGN+Bathrooms"
+      {"@type":"AdministrativeArea","name":"Surrey"},
+      {"@type":"AdministrativeArea","name":"Kent"},
+      {"@type":"AdministrativeArea","name":"Sussex"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://hgnbathrooms.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Bathroom Tiling"}
     ]
   }
   </script>

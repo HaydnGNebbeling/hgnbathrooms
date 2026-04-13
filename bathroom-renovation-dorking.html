@@ -20,20 +20,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "HGN Bathrooms",
-    "description": "Expert bathroom renovations and plumbing in Dorking, Surrey and surrounding areas.",
+    "@type": "Service",
+    "@id": "https://hgnbathrooms.co.uk/bathroom-renovation-dorking.html#service",
+    "serviceType": "Bathroom Renovation",
+    "name": "Bathroom Renovation Dorking",
+    "description": "Expert bathroom renovations in Dorking and surrounding areas — design, strip-out, plumbing, tiling and finishing by a family-run team based in Lingfield, Surrey.",
     "url": "https://hgnbathrooms.co.uk/bathroom-renovation-dorking.html",
-    "telephone": "+441293804790",
-    "email": "info@hgnbathrooms.com",
-    "founder": { "@type": "Person", "name": "Haydn Nebbeling" },
-    "areaServed": [{ "@type": "City", "name": "Dorking" }, { "@type": "City", "name": "North Holmwood" }, { "@type": "City", "name": "South Holmwood" }, { "@type": "City", "name": "Brockham" }, { "@type": "City", "name": "Westcott" }, { "@type": "City", "name": "Capel" }, { "@type": "City", "name": "Ockley" }, { "@type": "City", "name": "Newdigate" }],
-    "serviceType": ["Bathroom Renovation", "Plumbing", "Tiling", "Shower Installation", "Wet Room Installation", "Cloakroom Renovation"],
-    "address": {"@type":"PostalAddress","addressLocality":"Lingfield","addressRegion":"Surrey","postalCode":"RH7","addressCountry":"GB"},
-    "priceRange": "££",
-    "sameAs": [
-      "https://instagram.com/hgnbathrooms",
-      "https://www.google.com/maps/place/HGN+Bathrooms"
+    "provider": { "@id": "https://hgnbathrooms.co.uk/#business" },
+    "areaServed": [
+      {"@type":"Place","name":"Dorking"},
+      {"@type":"Place","name":"North Holmwood"},
+      {"@type":"Place","name":"South Holmwood"},
+      {"@type":"Place","name":"Brockham"},
+      {"@type":"Place","name":"Westcott"},
+      {"@type":"Place","name":"Capel"},
+      {"@type":"Place","name":"Ockley"},
+      {"@type":"Place","name":"Newdigate"}
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://hgnbathrooms.co.uk/bathroom-renovation-dorking.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://hgnbathrooms.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Bathroom Renovations","item":"https://hgnbathrooms.co.uk/bathroom-renovations.html"},
+      {"@type":"ListItem","position":3,"name":"Dorking"}
     ]
   }
   </script>

@@ -20,34 +20,32 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "HGN Bathrooms",
-    "description": "Expert bathroom renovations and plumbing in Crawley, Horley, Crawley Down and surrounding West Sussex areas.",
+    "@type": "Service",
+    "@id": "https://hgnbathrooms.co.uk/bathroom-renovation-crawley.html#service",
+    "serviceType": "Bathroom Renovation",
+    "name": "Bathroom Renovation Crawley",
+    "description": "Expert bathroom renovations in Crawley and surrounding areas — design, strip-out, plumbing, tiling and finishing by a family-run team based in Lingfield, Surrey.",
     "url": "https://hgnbathrooms.co.uk/bathroom-renovation-crawley.html",
-    "telephone": "+441293804790",
-    "email": "info@hgnbathrooms.com",
-    "image": "https://hgnbathrooms.co.uk/images/luxury-bathroom.jpg",
-    "founder": { "@type": "Person", "name": "Haydn Nebbeling" },
+    "provider": { "@id": "https://hgnbathrooms.co.uk/#business" },
     "areaServed": [
-      { "@type": "City", "name": "Crawley" },
-      { "@type": "City", "name": "Horley" },
-      { "@type": "City", "name": "Crawley Down" },
-      { "@type": "City", "name": "Three Bridges" },
-      { "@type": "City", "name": "Pound Hill" },
-      { "@type": "AdministrativeArea", "name": "West Sussex" }
+      {"@type":"Place","name":"Crawley"}
     ],
-    "serviceType": ["Bathroom Renovation", "Plumbing", "Tiling", "Shower Installation", "Wet Room Installation", "Cloakroom Renovation"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lingfield",
-      "addressRegion": "Surrey",
-      "postalCode": "RH7",
-      "addressCountry": "GB"
-    },
-    "priceRange": "££",
-    "sameAs": [
-      "https://instagram.com/hgnbathrooms",
-      "https://www.google.com/maps/place/HGN+Bathrooms"
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://hgnbathrooms.co.uk/bathroom-renovation-crawley.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://hgnbathrooms.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Bathroom Renovations","item":"https://hgnbathrooms.co.uk/bathroom-renovations.html"},
+      {"@type":"ListItem","position":3,"name":"Crawley"}
     ]
   }
   </script>

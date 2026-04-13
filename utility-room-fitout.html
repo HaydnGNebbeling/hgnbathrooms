@@ -21,23 +21,27 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "HGN Bathrooms",
-    "description": "Professional utility and laundry room fit-out services across Surrey, Kent and Sussex including plumbing, drainage, tiling and functional finishes.",
-    "url": "https://hgnbathrooms.co.uk/utility-room-fitout",
-    "telephone": "+441293804790",
-    "email": "info@hgnbathrooms.com",
-    "image": "https://hgnbathrooms.co.uk/images/luxury-bathroom.jpg",
-    "founder": { "@type": "Person", "name": "Haydn Nebbeling" },
+    "@type": "Service",
+    "@id": "https://hgnbathrooms.co.uk/utility-room-fitout.html#service",
+    "serviceType": "Utility Room Fit-out",
+    "name": "Utility Room Fit-out Surrey, Kent & Sussex",
+    "description": "Bespoke utility room installations — cabinetry, plumbing and flooring.",
+    "url": "https://hgnbathrooms.co.uk/utility-room-fitout.html",
+    "provider": { "@id": "https://hgnbathrooms.co.uk/#business" },
     "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Surrey" },
-      { "@type": "AdministrativeArea", "name": "Kent" },
-      { "@type": "AdministrativeArea", "name": "Sussex" }
-    ],
-    "serviceType": "Utility Room Fit-Out",
-    "sameAs": [
-      "https://instagram.com/hgnbathrooms",
-      "https://www.google.com/maps/place/HGN+Bathrooms"
+      {"@type":"AdministrativeArea","name":"Surrey"},
+      {"@type":"AdministrativeArea","name":"Kent"},
+      {"@type":"AdministrativeArea","name":"Sussex"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://hgnbathrooms.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Utility Room Fit-out"}
     ]
   }
   </script>

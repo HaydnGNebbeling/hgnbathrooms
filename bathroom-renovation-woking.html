@@ -20,20 +20,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "HGN Bathrooms",
-    "description": "Expert bathroom renovations and plumbing in Woking, Surrey and surrounding areas.",
+    "@type": "Service",
+    "@id": "https://hgnbathrooms.co.uk/bathroom-renovation-woking.html#service",
+    "serviceType": "Bathroom Renovation",
+    "name": "Bathroom Renovation Woking",
+    "description": "Expert bathroom renovations in Woking and surrounding areas — design, strip-out, plumbing, tiling and finishing by a family-run team based in Lingfield, Surrey.",
     "url": "https://hgnbathrooms.co.uk/bathroom-renovation-woking.html",
-    "telephone": "+441293804790",
-    "email": "info@hgnbathrooms.com",
-    "founder": { "@type": "Person", "name": "Haydn Nebbeling" },
-    "areaServed": [{ "@type": "City", "name": "Woking" }, { "@type": "City", "name": "Knaphill" }, { "@type": "City", "name": "Pyrford" }, { "@type": "City", "name": "Horsell" }, { "@type": "City", "name": "Hook Heath" }, { "@type": "City", "name": "Byfleet" }, { "@type": "City", "name": "West Byfleet" }, { "@type": "City", "name": "Sheerwater" }],
-    "serviceType": ["Bathroom Renovation", "Plumbing", "Tiling", "Shower Installation", "Wet Room Installation", "Cloakroom Renovation"],
-    "address": {"@type":"PostalAddress","addressLocality":"Lingfield","addressRegion":"Surrey","postalCode":"RH7","addressCountry":"GB"},
-    "priceRange": "££",
-    "sameAs": [
-      "https://instagram.com/hgnbathrooms",
-      "https://www.google.com/maps/place/HGN+Bathrooms"
+    "provider": { "@id": "https://hgnbathrooms.co.uk/#business" },
+    "areaServed": [
+      {"@type":"Place","name":"Woking"},
+      {"@type":"Place","name":"Knaphill"},
+      {"@type":"Place","name":"Pyrford"},
+      {"@type":"Place","name":"Horsell"},
+      {"@type":"Place","name":"Hook Heath"},
+      {"@type":"Place","name":"Byfleet"},
+      {"@type":"Place","name":"West Byfleet"},
+      {"@type":"Place","name":"Sheerwater"}
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://hgnbathrooms.co.uk/bathroom-renovation-woking.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://hgnbathrooms.co.uk/"},
+      {"@type":"ListItem","position":2,"name":"Bathroom Renovations","item":"https://hgnbathrooms.co.uk/bathroom-renovations.html"},
+      {"@type":"ListItem","position":3,"name":"Woking"}
     ]
   }
   </script>
